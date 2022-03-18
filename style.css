@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+}
+
 main {
   min-height: 100vh;
   width: 100%;
@@ -18,8 +48,6 @@ section {
 }
 
 section h1 {
-  font-size: 3rem;
-  font-weight: normal;
   color: #323e4f;
 }
 
@@ -28,22 +56,16 @@ section h1 span {
 }
 
 section h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
   color: #323e4f;
 }
 
 section div {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 section h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-bottom: 1px solid #323e4f;
+  border-bottom-color: #323e4f;
   color: #323e4f;
-  margin-bottom: 1rem;
 }
 
 section p {
@@ -53,17 +75,11 @@ section p {
 }
 
 section h4 {
-  font-size: 1rem;
-  font-weight: bold;
   color: #3b3838;
-  margin-bottom: 0.25rem;
 }
 
 section h5 {
-  font-size: 1rem;
-  font-weight: normal;
   color: #000000;
-  margin-bottom: 0.25rem;
 }
 
 section ul {
@@ -76,8 +92,96 @@ section ul li {
   color: #595959;
 }
 
+section a {
+  color: #333f50;
+  font-weight: 600;
+}
+section a:hover {
+  color: #323e4f;
+}
+section a:active {
+  color: #323e4f;
+}
+section a:visited {
+  color: #323e4f;
+}
+
+.degree {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000000;
+  margin-bottom: 0.25rem;
+}
+
+.university {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #4d4d4d;
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+
 aside {
   height: 100%;
   background: #333f50;
   color: #fff;
+  padding: 2rem;
+}
+
+aside .info {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+aside a {
+  color: #fff;
+}
+
+aside a:hover {
+  color: #fff;
+}
+
+aside a:active {
+  color: #fff;
+}
+
+aside a:visited {
+  color: #fff;
+}
+
+aside h3 {
+  border-bottom-color: #fff;
+  margin-top: 2rem;
+}
+
+aside ul {
+  padding-left: 2.5rem;
+}
+
+/* thin scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #666;
+}
+
+::-webkit-scrollbar-thumb:focus {
+  background: #666;
 }
