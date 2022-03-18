@@ -12,15 +12,30 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
     <title>Salman Wasi Khan</title>
   </head>
   <body>
     <main>
       <section>
-        <h1>Salman <span>Wasi</span></h1>
+        <div class="name">
+          <h1>Salman <span>Wasi</span></h1>
+          <div class="popover-container">
+            <button class="icon-btn popover-btn">
+              <i class="fa-solid fa-image fa-lg"></i>
+            </button>
+            <div id="profile-pic-popover" class="popover hidden">
+              <div class="popover-content">
+                <div class="thumbnail">
+                  <img src="images/pic.jpeg" alt="Salman Wasi" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <h2>MERN Stack Developer</h2>
 
-        <div>
+        <div class="summary">
           <h3>Professional Summary</h3>
           <p>
             Enthusiastic web developer eager to contribute to team success
@@ -32,7 +47,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="work-history">
           <h3>Work History</h3>
 
           <div class="work">
